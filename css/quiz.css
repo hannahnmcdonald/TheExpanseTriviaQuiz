@@ -1,0 +1,134 @@
+body {
+    background-image: url("https://img.wallpapersafari.com/desktop/1920/1080/58/73/KPWYGC.png");
+}
+
+/* @media only screen and (max-width: 768px) {
+    body {
+        background-image: url("https://img.wallpapersafari.com/desktop/1280/1024/58/73/KPWYGC.png");
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    body {
+        background-image: url("https://img.wallpapersafari.com/phone/640/1136/58/73/KPWYGC.png");
+        align-self: center;
+    }
+} */
+
+content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+}
+
+.home {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    color:#FFFFFF;
+    display: flex;
+    font-size: 15px;
+}
+
+.results {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    color:#FFFFFF;
+    display: flex;
+    font-size: 15px;
+}
+
+a:link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5f79a0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 150ms;
+    transform: scale(1.03);
+}
+
+.title-container {
+    margin-bottom: 65%;
+}
+
+.choice-container {
+    display: flex;
+    width: 50rem;
+    background: rgb(255,255,255, 0.45);
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    font-size: 15px;
+    border-radius: 1rem;
+    margin: 5px 5px 5px 5px;
+    text-align: center;
+}
+
+.choice-container:hover {
+    text-decoration: none;
+    cursor: pointer;
+    /* transition: transform 150ms;
+    transform: scale(1.02); */
+}
+
+#question {
+    font-size: 15px;
+    font-weight: bolder;
+    color: black;
+    height: 1.5rem;
+    letter-spacing: 1px;
+    font-family: 'Orbitron', sans-serif;
+    background-color: rgb(255, 255, 255, 0.75);
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.choice-letter {
+    font-weight: bolder;
+    font-size: 15px;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.scorecounter {
+    color:#FFFFFF;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.timer {
+    color:#FFFFFF;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-self: flex-end;
+}
+
+.choice-option {
+    width: 100%;
+    text-align: left;
+}
