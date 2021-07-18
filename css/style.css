@@ -144,3 +144,122 @@ btn:hover {
     transition: transform 150ms;
     transform: scale(1.05);
 }
+
+/* End HTML CSS Styling */
+
+.endform {
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+#end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 75px;
+}
+
+.btn {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    background-color: rgb(255,255, 255, 0.5);
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 150ms;
+    transform: scale(1.05);
+    border-radius: 5px;
+    width: 125px;
+    height: 30px;
+    font-size: 20px;
+}
+
+btn:hover {
+    background-color: #5f79a0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 150ms;
+    transform: scale(1.05);
+}
+
+#endtext {
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#savescorebtn {
+    height: 25px;
+    width: 60px;
+    font-size: 15px;
+}
+
+#savescorebtn:hover {
+    background-color: #5f79a0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 150ms;
+    transform: scale(1.10);
+}
+
+#endbtns {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    background-color: rgb(255,255, 255, 0.5);
+    color:#FFFFFF;
+    width: 125px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    font-size: 17px;;
+
+}
+
+#endbtns:hover {
+    background-color: #5f79a0;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 150ms;
+    transform: scale(1.10);
+} 
+
+.input {
+    margin: 25px 25px 5px 25px;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+.highScores {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 25px;
+    color:#FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+}
+
+#highScoresList {
+    list-style:none;
+    font-size: 25px;
+}
+
+.highscorecontainer {
+    text-align: center;
+    display: grid;
+}
