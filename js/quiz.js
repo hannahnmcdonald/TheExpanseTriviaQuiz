@@ -100,3 +100,35 @@ let questions= [
     }
 ];
 
+
+// Function of getting each question-------------------------------------------------------//
+function getNewQuestion() {
+
+    // Below are the parameters. If the parameters are met, user will be taken to the end.html page to save their score//
+    if (unusedQuestions.length === 0 || questionCounter >= 10 || secondsLeft === 0) 
+    {   
+        var score = secondsLeft;
+        localStorage.setItem('mostRecentScore', score);
+        return window.location.assign('./end.html');
+    }
+
+    // This cycles through the available questions from the questionsIndex array//
+    questionCounter++;
+    const questionIndex = Math.floor(Math.random() * unusedQuestions.length);
+    currentQuestion = unusedQuestions[questionIndex];
+    // Below populates the question into the 'question' ID in the HTML
+    question.innerText = currentQuestion.question;
+
+    // .forEach Method on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach//
+    choices.forEach((choice) => {
+        const number = choice.dataset['number'];
+        // This will populate the choices into the "choice-option" in the html
+        choice.innerText = currentQuestion['choice' + number];
+    });
+    // This removes the old question and adds a new one//
+    // .splice method on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice//
+    unusedQuestions.splice(questionIndex, 1);
+    acceptAnswers = true;
+};
+
+startQuiz();
