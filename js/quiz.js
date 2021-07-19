@@ -224,4 +224,45 @@ function getNewQuestion() {
 
 };
 
+// TEST: console.log(question);
+for (let choice of choices) { 
+    choice.addEventListener('click', function(e) {
+        // IF not accepting answers- return//
+        if (!acceptAnswers) return;
+
+        // MDN e.target: https://developer.mozilla.org/en-US/docs/Web/API/Event/target//
+        acceptAnswers = false;
+        const selectedChoice = e.target;
+        const selectedAnswer = selectedChoice.dataset['number'];
+
+        // console.log(selectedAnswer == currentQuestion.answer) had to change to == instead of === due to datatype conflict
+        
+        // Below variables are set to check if answer is correct/incorrect. Correct/Incorrect will be displayed in the console//
+        // TODO: Add colors in CSS for correct/incorrect answers//
+        var answerIndex = 'incorrect';
+            if (selectedAnswer == currentQuestion.answer) {
+                answerIndex = 'correct';
+            }
+
+            // TEST: console.log(answerIndex);
+            // IF incorrect, minus 10 seconds; correct plus 10 seconds//
+            if (answerIndex === 'correct') {
+                secondsLeft = secondsLeft + 10;
+                // TEST: console.log("Correct, plus 10 seconds");
+              } else {
+                secondsLeft = secondsLeft - 10;
+                // TEST: console.log("Incorrect, minus 10 seconds");
+              }
+            // Below gives the class applied (color) a time limit of 200 milliseconds to show before it goes to next question //
+            // 
+            selectedChoice.parentElement.classList.add(answerIndex);
+
+            timer = setTimeout(function () {
+                selectedChoice.parentElement.classList.remove(answerIndex);
+                getNewQuestion();
+                // Time of color change set to 200 milliseconds so it doesn't hold up the quiz too much//
+            }, 200);
+    });
+};
+
 startQuiz();
