@@ -1,7 +1,5 @@
 # TheExpanseTriviaQuiz
 
-# TheExpanseQuiz
-
 <ins> Deployed Application:</ins> https://hannahnmcdonald.github.io/TheExpanseTriviaQuiz/
 
 **Play this timed quiz game for the hit sci-fi series 'The Expanse.' This quiz follows questions from seasons 1-5. Test your knowledge, save your high score, and play against your friends!**
