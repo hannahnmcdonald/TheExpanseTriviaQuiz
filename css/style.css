@@ -3,7 +3,7 @@ body {
     align-self: center;
 }
 
- /* @media only screen and (max-width: 768px) {
+ @media only screen and (max-width: 768px) {
     body {
         background-image: url("https://img.wallpapersafari.com/desktop/1280/1024/58/73/KPWYGC.png");
         align-self: center;
@@ -15,7 +15,7 @@ body {
         background-image: url("https://img.wallpapersafari.com/phone/640/1136/58/73/KPWYGC.png");
         align-self: center;
     }
-} */
+}
 
 h2 {
     text-align: center;
@@ -104,50 +104,6 @@ a:visited {
 
 a:hover {
     color: #5f79a0;
-    text-decoration: none;
-    cursor: pointer;
-    transition: transform 150ms;
-    transform: scale(1.05);
-}
-
-/* End HTML CSS Styling */
-
-.endform {
-    width: 100%;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    max-width: 30rem;
-}
-
-#end {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
-    color: #FFFFFF;
-    margin-top: 75px;
-}
-
-.btn {
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
-    background-color: rgb(255,255, 255, 0.5);
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-    transition: transform 150ms;
-    transform: scale(1.05);
-    border-radius: 5px;
-    width: 125px;
-    height: 30px;
-    font-size: 20px;
-}
-
-btn:hover {
-    background-color: #5f79a0;
     text-decoration: none;
     cursor: pointer;
     transition: transform 150ms;

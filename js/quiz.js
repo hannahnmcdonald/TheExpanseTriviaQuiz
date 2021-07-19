@@ -100,7 +100,6 @@ let questions= [
     }
 ];
 
-
 // Below FX is called at the end of this JS//
 function startQuiz() {
     // Starting question count
@@ -193,6 +192,14 @@ function startQuiz() {
     getNewQuestion();
 };
 
+//Below is the code to set the timer. The setInterval Fx beings and counts down and populates the # into the timer ID in the HTML. -----------------------//
+// Start of Quiz sets 2 minutes or 120 seconds on the timer and begins to
+var secondsLeft = 120;
+var timer = setInterval(function() {
+    secondsLeft--;
+    document.getElementById("timer").textContent = secondsLeft;
+}, 1000);
+
 
 // Function of getting each question-------------------------------------------------------//
 function getNewQuestion() {
@@ -202,7 +209,7 @@ function getNewQuestion() {
     {   
         var score = secondsLeft;
         localStorage.setItem('mostRecentScore', score);
-        return window.location.assign('/end.html');
+        return window.location.assign('./end.html');
     }
 
     // This cycles through the available questions from the questionsIndex array//
@@ -221,7 +228,6 @@ function getNewQuestion() {
     // .splice method on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice//
     unusedQuestions.splice(questionIndex, 1);
     acceptAnswers = true;
-
 };
 
 // TEST: console.log(question);
@@ -265,4 +271,5 @@ for (let choice of choices) {
     });
 };
 
+// Calls the startQuiz function to begin the game-------------------------------------------------//
 startQuiz();
