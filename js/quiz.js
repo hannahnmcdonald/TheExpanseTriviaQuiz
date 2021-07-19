@@ -202,7 +202,7 @@ function getNewQuestion() {
     {   
         var score = secondsLeft;
         localStorage.setItem('mostRecentScore', score);
-        return window.location.assign('./end.html');
+        return window.location.assign('./TheExpanseTriviaQuiz/end.html');
     }
 
     // This cycles through the available questions from the questionsIndex array//
@@ -211,6 +211,16 @@ function getNewQuestion() {
     currentQuestion = unusedQuestions[questionIndex];
     // Below populates the question into the 'question' ID in the HTML
     question.innerText = currentQuestion.question;
+
+    for (let choice of choices) {
+        const number = choice.dataset['number'];
+        // This will populate the choices into the "choice-option" in the html
+        choice.innerText = currentQuestion['choice' + number];
+    };
+    // This removes the old question and adds a new one//
+    // .splice method on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice//
+    unusedQuestions.splice(questionIndex, 1);
+    acceptAnswers = true;
 
 };
 
