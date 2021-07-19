@@ -202,7 +202,7 @@ function getNewQuestion() {
     {   
         var score = secondsLeft;
         localStorage.setItem('mostRecentScore', score);
-        return window.location.assign('./TheExpanseTriviaQuiz/end.html');
+        return window.location.assign('/end.html');
     }
 
     // This cycles through the available questions from the questionsIndex array//
