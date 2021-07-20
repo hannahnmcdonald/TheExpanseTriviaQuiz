@@ -22,7 +22,7 @@ h2 {
     text-align: center;
     color: #FFFFFF;
     font-family: 'Orbitron', sans-serif;
-    font-weight: lighter;
+    font-weight: bold;
     font-size: 20px;
     padding: 10px 10px 20px 10px;
     letter-spacing: 1px;
@@ -32,7 +32,7 @@ h3 {
     text-align: center;
     color: #FFFFFF;
     font-family: 'Orbitron', sans-serif;
-    font-weight: lighter;
+    font-weight:normal;
     font-size: 15px;
     letter-spacing: 1px;
 }
