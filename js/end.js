@@ -17,7 +17,7 @@ function saveHighScore(e) {
         score: mostRecentScore,
         name: initials.value,
     };
-    // TEST: console.log(score);
+    //TEST: console.log(score);
     highScores.push(score);
     // This sorts the array from high to low
     highScores.sort((a, b) => b.score - a.score);
