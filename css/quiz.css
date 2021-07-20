@@ -2,7 +2,8 @@ body {
     background-image: url("https://img.wallpapersafari.com/desktop/1920/1080/58/73/KPWYGC.png");
 }
 
-@media only screen and (max-width: 768px) {
+/* TO DO: Options below for making this quiz more responsive */
+/* @media only screen and (max-width: 768px) {
     body {
         background-image: url("https://img.wallpapersafari.com/desktop/1280/1024/58/73/KPWYGC.png");
         align-self: center;
@@ -14,7 +15,7 @@ body {
         background-image: url("https://img.wallpapersafari.com/phone/640/1136/58/73/KPWYGC.png");
         align-self: center;
     }
-}
+} */
 
 content {
     display: flex;
@@ -41,6 +42,7 @@ content {
     font-size: 15px;
 }
 
+/* Link effects */
 a:link {
     color: #FFFFFF;
     text-decoration: none;
@@ -80,11 +82,12 @@ a:hover {
     text-align: center;
 }
 
+/* Transform/Transtion option for each correct/incorrect answer after it is chosen */
 .choice-container:hover {
     text-decoration: none;
     cursor: pointer;
-    /* transition: transform 150ms;
-    transform: scale(1.02); */
+    transition: transform 150ms;
+    transform: scale(1.02);
 }
 
 #question {
@@ -131,4 +134,13 @@ a:hover {
 .choice-option {
     width: 100%;
     text-align: left;
+}
+
+/* Colors for incorrect/correct answers */
+.correct {
+    background-color:rgba(138, 255, 5, 0.45)
+}
+
+.incorrect {
+    background-color:rgba(255, 0, 0, 0.45)
 }

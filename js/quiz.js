@@ -105,95 +105,15 @@ function startQuiz() {
     // Starting question count
     questionCounter = 0;
     // All questions are unused at the beginning
-    unusedQuestions = [ 
-        {
-            question: "What was the name of the ship Holden was serving on at the start of the show?",
-            choice1: "The Constellation",
-            choice2: "The Rocinante",
-            choice3: "The Exodus",
-            choice4: "The Canterbury",
-            answer: 4,
-        },
-        {
-            question: "Who is botanist of a soy farm on Ganymede Station?",
-            choice1: "Praxideke",
-            choice2: "Cotyar",
-            choice3: "Jefferson",
-            choice4: "Alex",
-            answer: 1,
-        },
-        {
-            question: "What was the name of Julie's racing ship?",
-            choice1: "Xuesen",
-            choice2: "Donnager",
-            choice3: "Razorback",
-            choice4: "Agatha King",
-            answer: 3,
-        },
-        {
-            question: "What is IO?",
-            choice1: "A moon around Jupiter",
-            choice2: "A maiden loved by Zues",
-            choice3: "One of the Galilean moons",
-            choice4: "All of the above",
-            answer: 4,
-        },
-        {
-            question: "How many traversable wormholes the Ring Network has?",
-            choice1: "123",
-            choice2: "1373",
-            choice3: "759",
-            choice4: "1743",
-            answer: 2,
-        },
-        {
-            question: "Where is Amos from?",
-            choice1: "Detroit",
-            choice2: "Baltimore",
-            choice3: "Melbourne",
-            choice4: "Chicago",
-            answer: 2,
-        },
-        {
-            question: "During the dramatic events of the 3rd season, Admiral Souther commanded the -?",
-            choice1: "Agatha King",
-            choice2: "Thomas Prince",
-            choice3: "Nathan Hale",
-            choice4: "Guanshiyin",
-            answer: 1,
-        },
-        {
-            question: "Which ship's captain is Sandrine Kirino?",
-            choice1: "Xuesen",
-            choice2: "Donnager",
-            choice3: "Hammurabi",
-            choice4: "Scirocco",
-            answer: 3,
-        },
-        {
-            question: "How many childen did Jules-Pierre Mao have?",
-            choice1: "2",
-            choice2: "3",
-            choice3: "5",
-            choice4: "7",
-            answer: 3,
-        },
-        {
-            question: "What was Drummer's job before she became a captain on the Behemoth?",
-            choice1: "XO on the Guy Molinari",
-            choice2: "Head of Belter security on Eros",
-            choice3: "Captain of the Toth",
-            choice4: "XO of the Canterbury",
-            answer: 1,
-        }
-    ];
+    // Used [...questions] so that all questions wouldn't have to be copied here again below// 
+    unusedQuestions = [...questions];
     //TEST: console.log(unusedQuestions);
     //Function of getNewQuestion to follow
     getNewQuestion();
 };
 
 //Below is the code to set the timer. The setInterval Fx beings and counts down and populates the # into the timer ID in the HTML. -----------------------//
-// Start of Quiz sets 2 minutes or 120 seconds on the timer and begins to
+// Start of Quiz sets 2 minutes or 120 seconds on the timer and begins to countdown-----------------------------------------------------------------------//
 var secondsLeft = 120;
 var timer = setInterval(function() {
     secondsLeft--;
@@ -219,6 +139,7 @@ function getNewQuestion() {
     // Below populates the question into the 'question' ID in the HTML
     question.innerText = currentQuestion.question;
 
+    // For loop below to cycle through the questions//
     for (let choice of choices) {
         const number = choice.dataset['number'];
         // This will populate the choices into the "choice-option" in the html
@@ -230,7 +151,7 @@ function getNewQuestion() {
     acceptAnswers = true;
 };
 
-// TEST: console.log(question);
+    // TEST: console.log(question);
 for (let choice of choices) { 
     choice.addEventListener('click', function(e) {
         // IF not accepting answers- return//
@@ -241,16 +162,16 @@ for (let choice of choices) {
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset['number'];
 
-        // console.log(selectedAnswer == currentQuestion.answer) had to change to == instead of === due to datatype conflict
+        // console.log(selectedAnswer == currentQuestion.answer) had to change to == instead of === due to datatype conflict//
         
         // Below variables are set to check if answer is correct/incorrect. Correct/Incorrect will be displayed in the console//
-        // TODO: Add colors in CSS for correct/incorrect answers//
         var answerIndex = 'incorrect';
             if (selectedAnswer == currentQuestion.answer) {
                 answerIndex = 'correct';
             }
 
             // TEST: console.log(answerIndex);
+
             // IF incorrect, minus 10 seconds; correct plus 10 seconds//
             if (answerIndex === 'correct') {
                 secondsLeft = secondsLeft + 10;
@@ -260,7 +181,6 @@ for (let choice of choices) {
                 // TEST: console.log("Incorrect, minus 10 seconds");
               }
             // Below gives the class applied (color) a time limit of 200 milliseconds to show before it goes to next question //
-            // 
             selectedChoice.parentElement.classList.add(answerIndex);
 
             timer = setTimeout(function () {

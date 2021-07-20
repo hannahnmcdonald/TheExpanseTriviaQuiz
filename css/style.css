@@ -3,7 +3,8 @@ body {
     align-self: center;
 }
 
- @media only screen and (max-width: 768px) {
+/* TO DO: Make quiz more responsive to screensize */
+ /* @media only screen and (max-width: 768px) {
     body {
         background-image: url("https://img.wallpapersafari.com/desktop/1280/1024/58/73/KPWYGC.png");
         align-self: center;
@@ -15,7 +16,7 @@ body {
         background-image: url("https://img.wallpapersafari.com/phone/640/1136/58/73/KPWYGC.png");
         align-self: center;
     }
-}
+} */
 
 h2 {
     text-align: center;
@@ -61,6 +62,7 @@ h3 {
     border-radius: 5px;
 }
 
+/* Start Button Effects: */
 #startbtn:hover {
     background-color: #5f79a0;
     text-decoration: none;
@@ -86,6 +88,8 @@ h3 {
     justify-content: flex-end;
     font-size: 15px;
 }
+
+/* Link effects: */
 
 a:link {
     color: #FFFFFF;
