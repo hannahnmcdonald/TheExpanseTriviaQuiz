@@ -40,4 +40,12 @@ This project is a timed quiz to test the user's knowlege of the amazing sci-fi s
 
 [Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
 
+
+[Splice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice//)
+
+
+[Sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+
+
+
 <ins>Built with:</ins> Gitbash, Github, VS Code + VS Code Live Server Extension 
