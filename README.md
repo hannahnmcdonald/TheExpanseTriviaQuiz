@@ -9,7 +9,7 @@ This project is a timed quiz to test the user's knowlege of the amazing sci-fi s
 ![Home Screenshot](/images/ScreenshotHome.png)
 ![Quiz Screenshot](/images/ScreenshotQuiz.png)
 ![End Screenshot](/images/ScreenshotEnd.png)
-![High Scores Screenshot](/images/ScreenshotHighScore.png)
+![High Scores Screenshot](/images/ScreenshotHighscores.png)
 
 <ins>Credits:</ins> 
 
