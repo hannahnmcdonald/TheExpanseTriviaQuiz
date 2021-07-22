@@ -21,9 +21,7 @@ body {
 h2 {
     text-align: center;
     color: #FFFFFF;
-    font-family: pirulen,sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Orbitron', sans-serif;
     font-weight: bold;
     font-size: 20px;
     padding: 10px 10px 20px 10px;
@@ -33,11 +31,9 @@ h2 {
 h3 {
     text-align: center;
     color: #FFFFFF;
-    font-family: pirulen,sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Orbitron', sans-serif;
     font-weight:normal;
-    font-size: 12px;
+    font-size: 15px;
     letter-spacing: 1px;
 }
 
@@ -47,9 +43,7 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    font-family: pirulen,sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Orbitron', sans-serif;
     font-weight: bold;
     font-size: 50px;
     margin: 0px 0px 0px 0px;
@@ -58,16 +52,13 @@ h3 {
 #startbtn {
     display: grid;
     margin: auto;
-    font-family: pirulen,sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Orbitron', sans-serif;
     text-align: center;
     background-color: rgb(255,255, 255, 0.5);
     color:black;
     width: 100px;
     height: 40px;
-    font-size: 20px;
-    padding-top: 10px;
+    font-size: 25px;
     border-radius: 5px;
 }
 
@@ -81,9 +72,7 @@ h3 {
 }
 
 .home{
-    font-family: pirulen,sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Orbitron', sans-serif;
     color:#FFFFFF;
     display: flex;
     flex-direction: row-reverse;
@@ -92,9 +81,7 @@ h3 {
 }
 
 .results {
-    font-family: pirulen,sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Orbitron', sans-serif;
     color:#FFFFFF;
     display: flex;
     flex-direction: row-reverse;
@@ -142,18 +129,14 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    font-family: pirulen,sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Orbitron', sans-serif;
     text-align: center;
     color: #FFFFFF;
     margin-top: 75px;
 }
 
 .btn {
-    font-family: pirulen,sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Orbitron', sans-serif;
     text-align: center;
     background-color: rgb(255,255, 255, 0.5);
     color: black;
@@ -167,7 +150,7 @@ a:hover {
     font-size: 20px;
 }
 
-.btn:hover {
+btn:hover {
     background-color: #5f79a0;
     text-decoration: none;
     cursor: pointer;
@@ -203,9 +186,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     margin-bottom: 10px;
-    font-family: pirulen,sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Orbitron', sans-serif;
     text-align: center;
     background-color: rgb(255,255, 255, 0.5);
     color:#FFFFFF;
@@ -228,16 +209,12 @@ a:hover {
 
 .input {
     margin: 25px 25px 5px 25px;
-    font-family: pirulen,sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Orbitron', sans-serif;
     text-align: center;
 }
 
 .highScores {
-    font-family: pirulen,sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Orbitron', sans-serif;
     font-size: 25px;
     color:#FFFFFF;
     display: flex;

@@ -19,7 +19,7 @@ var unusedQuestions = [];
 //QUESTIONS List---------------------------------------------------------------------------------//
 let questions= [ 
     {
-        question: "What was the name of the ship Holden was on at the start of the show?",
+        question: "What was the name of the ship Holden was serving on at the start of the show?",
         choice1: "The Constellation",
         choice2: "The Rocinante",
         choice3: "The Exodus",
@@ -67,7 +67,7 @@ let questions= [
         answer: 2,
     },
     {
-        question: "During the events of the 3rd season, Admiral Souther commanded the -?",
+        question: "During the dramatic events of the 3rd season, Admiral Souther commanded the -?",
         choice1: "Agatha King",
         choice2: "Thomas Prince",
         choice3: "Nathan Hale",
