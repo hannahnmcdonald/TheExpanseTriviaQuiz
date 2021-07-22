@@ -27,7 +27,9 @@ content {
 }
 
 .home {
-    font-family: 'Orbitron', sans-serif;
+    font-family: pirulen,sans-serif;
+    font-weight: 400;
+    font-style: normal;
     letter-spacing: 1px;
     color:#FFFFFF;
     display: flex;
@@ -35,7 +37,9 @@ content {
 }
 
 .results {
-    font-family: 'Orbitron', sans-serif;
+    font-family: pirulen,sans-serif;
+    font-weight: 400;
+    font-style: normal;
     letter-spacing: 1px;
     color:#FFFFFF;
     display: flex;
@@ -74,12 +78,15 @@ a:hover {
     display: flex;
     width: 50rem;
     background: rgb(255,255,255, 0.45);
-    font-family: 'Orbitron', sans-serif;
+    font-family: pirulen,sans-serif;
+    font-weight: 400;
+    font-style: normal;
     letter-spacing: 1px;
-    font-size: 15px;
+    font-size: 12px;
     border-radius: 1rem;
     margin: 5px 5px 5px 5px;
     text-align: center;
+    font-stretch:narrower;
 }
 
 /* Transform/Transtion option for each correct/incorrect answer after it is chosen */
@@ -91,12 +98,15 @@ a:hover {
 }
 
 #question {
-    font-size: 15px;
+    font-size: 12px;
     font-weight: bolder;
     color: black;
-    height: 1.5rem;
+    height: 2rem;
     letter-spacing: 1px;
-    font-family: 'Orbitron', sans-serif;
+    font-family: pirulen,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: narrower;
     background-color: rgb(255, 255, 255, 0.75);
     border-radius: 1rem;
     text-align: center;
@@ -104,14 +114,16 @@ a:hover {
 
 .choice-letter {
     font-weight: bolder;
-    font-size: 15px;
+    font-size: 10px;
     padding-right: 2rem;
     padding-left: 2rem;
 }
 
 .scorecounter {
     color:#FFFFFF;
-    font-family: 'Orbitron', sans-serif;
+    font-family: pirulen,sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 25px;
     display: flex;
     flex-direction: row;
@@ -121,7 +133,9 @@ a:hover {
 
 .timer {
     color:#FFFFFF;
-    font-family: 'Orbitron', sans-serif;
+    font-family: pirulen,sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 30px;
     letter-spacing: 2px;
     text-align: center;
