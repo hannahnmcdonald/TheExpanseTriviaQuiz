@@ -6,6 +6,7 @@ body {
     /* extended code */
 background-size: cover;
 background-repeat: no-repeat;
+overflow-x: hidden;
 }
 
 /* TO DO: Make quiz more responsive to screensize */
