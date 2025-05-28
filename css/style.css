@@ -1,6 +1,11 @@
 body {
-    background-image: url("https://img.wallpapersafari.com/desktop/1920/1080/58/73/KPWYGC.png");
+    background-image: url("../images/background.png");
     align-self: center;
+    height: 100%;
+    width: 100%;
+    /* extended code */
+background-size: cover;
+background-repeat: no-repeat;
 }
 
 /* TO DO: Make quiz more responsive to screensize */
