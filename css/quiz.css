@@ -1,5 +1,11 @@
 body {
     background-image: url("../images/background.png");
+    align-self: center;
+    height: 100%;
+    width: 100%;
+    /* extended code */
+background-size: cover;
+background-repeat: no-repeat;
 }
 
 /* TO DO: Options below for making this quiz more */
